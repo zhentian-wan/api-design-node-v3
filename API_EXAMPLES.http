@@ -1,0 +1,12 @@
+
+### Get mock
+GET http://localhost:3000/api/item HTTP/1.1
+
+
+### Post mock
+POST http://localhost:3000/api/item HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}

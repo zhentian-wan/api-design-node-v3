@@ -30,6 +30,8 @@ const itemSchema = new mongoose.Schema(
   { timestamps: true }
 )
 
+// 1: means sorting order
+// order matters, list first, then name
 itemSchema.index({ list: 1, name: 1 }, { unique: true })
 
 export const Item = mongoose.model('item', itemSchema)
